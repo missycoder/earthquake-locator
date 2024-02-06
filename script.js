@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Iterate through all earthquake features
     response.data.features.forEach((earthquake) => {
         // Get coordinates in the correct order (lat, lng)
-        const coordinates = [earthquake.geometry.coordinates[1], earthquake.geometry.coordinates[0]];
+        const coordinates = [earthquake.geometry.coordinates[1], earthquake.geometry.coordinates[0]] ;
 
         // Create a marker for each earthquake
         const marker = L.marker(coordinates);
